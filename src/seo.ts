@@ -66,9 +66,9 @@ const organisation = {
   url: SITE_URL,
   logo: {
     '@type': 'ImageObject',
-    url: `${SITE_URL}/images/kitsonet-favicon.png`,
-    width: 512,
-    height: 512,
+    url: `${SITE_URL}/images/kitsonet-logo.png`,
+    width: 388,
+    height: 223,
   },
   image: `${SITE_URL}${DEFAULT_SOCIAL_IMAGE}`,
   foundingDate: '2003',
