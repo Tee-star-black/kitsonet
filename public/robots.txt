@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://kitsonet.org.za/sitemap.xml
+Host: kitsonet.org.za
