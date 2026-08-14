@@ -59,10 +59,18 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </a>
 
         <div className="mt-8 border-t border-black/10 pt-6 text-sm leading-7 text-muted">
-          <p>Johannesburg, South Africa</p>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=No.%201%20Rose%20Street%2C%20Rosettenville%2C%20Johannesburg%2C%202190"
+            target="_blank"
+            rel="noreferrer"
+            className="block transition hover:text-primary-800"
+          >
+            No. 1 Rose Street, Rosettenville<br />
+            Johannesburg, 2190
+          </a>
           <a
             href="mailto:Kitsonet@classicmail.co.za"
-            className="transition hover:text-primary-800"
+            className="mt-2 inline-block transition hover:text-primary-800"
           >
             Kitsonet@classicmail.co.za
           </a>

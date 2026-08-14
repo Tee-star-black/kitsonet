@@ -7,9 +7,14 @@ function Footer() {
       <div className="mx-auto max-w-[1200px]">
         <div className="grid gap-12 border-b border-white/12 pb-14 md:grid-cols-2 lg:grid-cols-[1.25fr_.75fr_.9fr_1fr]">
           <div>
-            <a href="/" className="inline-flex items-center gap-3" aria-label="Kitso-Net home">
-              <span className="logo-cube grid h-11 w-11 place-items-center bg-accent-400 font-heading text-xl font-bold text-primary-950">K</span>
-              <span className="font-heading text-3xl font-bold">Kitso-Net</span>
+            <a href="/" className="inline-flex items-center" aria-label="Kitso-Net home">
+              <img
+                src="/images/kitsonet-logo.png"
+                alt=""
+                width="388"
+                height="223"
+                className="h-24 w-auto"
+              />
             </a>
             <p className="mt-5 max-w-sm leading-7 text-primary-200">Compassionate, community-based care and support that helps older persons live with dignity, independence and meaningful connection.</p>
             <p className="mt-6 text-xs font-bold uppercase tracking-[.18em] text-accent-300">Serving Johannesburg since 2003</p>
@@ -27,7 +32,7 @@ function Footer() {
             <div className="mt-5 space-y-4 text-sm text-primary-200">
               <a href="tel:+27114353453" className="flex items-start gap-3 hover:text-white"><Phone size={17} className="mt-0.5 shrink-0 text-accent-300"/>011 435 3453</a>
               <a href="mailto:Kitsonet@classicmail.co.za" className="flex items-start gap-3 break-all hover:text-white"><Mail size={17} className="mt-0.5 shrink-0 text-accent-300"/>Kitsonet@classicmail.co.za</a>
-              <a href="https://www.google.com/maps/search/?api=1&query=Johannesburg%2C%20South%20Africa" className="flex items-start gap-3 hover:text-white" target="_blank" rel="noreferrer"><MapPin size={17} className="mt-0.5 shrink-0 text-accent-300"/>Johannesburg, South Africa</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=No.%201%20Rose%20Street%2C%20Rosettenville%2C%20Johannesburg%2C%202190" className="flex items-start gap-3 hover:text-white" target="_blank" rel="noreferrer"><MapPin size={17} className="mt-0.5 shrink-0 text-accent-300"/><span>No. 1 Rose Street<br />Rosettenville, Johannesburg, 2190</span></a>
               <p className="flex items-start gap-3"><Clock3 size={17} className="mt-0.5 shrink-0 text-accent-300"/>Monday to Friday<br/>08:00 to 16:30</p>
             </div>
           </div>
