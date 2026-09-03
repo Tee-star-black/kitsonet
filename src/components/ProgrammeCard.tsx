@@ -27,7 +27,7 @@ function ProgrammeCard({ programme, index }: ProgrammeCardProps) {
         </div>
       </div>
 
-      <div className="relative p-6 sm:p-8">
+      <div className="relative p-6 text-center sm:p-8 sm:text-left">
         <div className="absolute left-0 top-0 h-full w-px bg-primary-100 transition duration-500 group-hover:bg-primary-300" />
 
         <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary-500">
@@ -38,11 +38,11 @@ function ProgrammeCard({ programme, index }: ProgrammeCardProps) {
           {programme.title}
         </h3>
 
-        <p className="mt-4 max-w-xl leading-7 text-muted">
+        <p className="mx-auto mt-4 max-w-xl leading-7 text-muted sm:mx-0">
           {programme.description}
         </p>
 
-        <div className="mt-7 flex items-center justify-between border-t border-primary-100 pt-5">
+        <div className="mt-7 flex flex-col items-center justify-center gap-4 border-t border-primary-100 pt-5 sm:flex-row sm:justify-between">
           <a
             href={programme.href}
             className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.12em] text-primary-700 transition duration-300 hover:text-primary-950"
