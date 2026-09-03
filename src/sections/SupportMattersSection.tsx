@@ -72,16 +72,16 @@ function SupportMattersSection() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="overflow-hidden image-cut border border-white/10 shadow-2xl">
-            <img
-              src="/images/support-matters.png"
-              alt="A caregiver providing practical assistance to an older person"
-              className="aspect-[4/5] w-full object-cover"
-            />
-          </div>
+        <div className="relative flex min-h-[420px] items-center justify-center lg:min-h-[520px]">
+          <div className="absolute inset-8 rounded-full bg-white/5 blur-3xl" aria-hidden="true" />
 
-          <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/20 bg-primary-950/80 p-6 backdrop-blur-md">
+          <img
+            src="/images/elderly-care-assistance.png"
+            alt="Illustration of a caregiver helping an older person walk safely"
+            className="relative z-10 w-full max-w-[470px] object-contain drop-shadow-2xl"
+          />
+
+          <div className="absolute bottom-6 left-6 right-6 z-20 rounded-2xl border border-white/20 bg-primary-950/80 p-6 backdrop-blur-md">
             <p className="font-heading text-2xl font-bold">
               Every contribution creates practical impact
             </p>
