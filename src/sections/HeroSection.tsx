@@ -10,14 +10,14 @@ function HeroSection() {
       <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(90deg,rgba(6,20,16,.92)_0%,rgba(9,28,22,.76)_42%,rgba(9,28,22,.24)_70%,rgba(9,28,22,.08)_100%)]" />
       <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,18,14,.34)_0%,transparent_32%,rgba(5,18,14,.5)_100%)]" />
 
-      <div className="relative mx-auto flex min-h-[calc(100vh-76px)] max-w-[1400px] items-center px-5 py-16 sm:px-8 lg:px-12 xl:px-20">
-        <div className="mx-auto max-w-3xl py-10 text-center text-white sm:mx-0 sm:text-left">
-          <div className="reveal-up mb-7 inline-flex items-center gap-2 border border-white/25 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[.18em] text-white shadow-lg backdrop-blur-md">
+      <div className="relative mx-auto flex min-h-[calc(100vh-76px)] max-w-[1400px] items-center justify-center px-5 py-16 sm:justify-start sm:px-8 lg:px-12 xl:px-20">
+        <div className="w-full max-w-3xl py-10 text-center text-white sm:text-left">
+          <div className="reveal-up mx-auto mb-7 inline-flex items-center justify-center gap-2 border border-white/25 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[.18em] text-white shadow-lg backdrop-blur-md sm:mx-0">
             <ShieldCheck size={15} />
             Community care since 2003
           </div>
 
-          <h1 className="reveal-up delay-2 text-center font-heading text-[3.6rem] font-semibold leading-[.92] tracking-[-.045em] text-white drop-shadow-[0_8px_30px_rgba(0,0,0,.28)] sm:text-left sm:text-[5.2rem] lg:text-[5.7rem] xl:text-[6.5rem]">
+          <h1 className="reveal-up delay-2 mx-auto max-w-[11ch] text-center font-heading text-[3.6rem] font-semibold leading-[.92] tracking-[-.045em] text-white drop-shadow-[0_8px_30px_rgba(0,0,0,.28)] sm:mx-0 sm:max-w-none sm:text-left sm:text-[5.2rem] lg:text-[5.7rem] xl:text-[6.5rem]">
             Care that helps older persons{' '}
             <span className="text-accent-200">live with dignity.</span>
           </h1>
@@ -26,7 +26,7 @@ function HeroSection() {
             Practical home-based care, health support and meaningful connection for older persons and families across Johannesburg.
           </p>
 
-          <div className="reveal-up mt-9 flex flex-col gap-3 sm:flex-row">
+          <div className="reveal-up mx-auto mt-9 flex max-w-md flex-col gap-3 sm:mx-0 sm:max-w-none sm:flex-row">
             <a
               href="/contact"
               className="green-button inline-flex min-h-14 items-center justify-center gap-2 px-7 font-semibold text-white transition"
