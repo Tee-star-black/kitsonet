@@ -82,16 +82,19 @@ function AboutSection() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="overflow-hidden image-cut shadow-xl">
-            <img
-              src="/images/about-community.jpg"
-              alt="Kitso-Net caregivers and community members together"
-              className="aspect-[4/5] w-full object-cover sm:aspect-[5/4] lg:aspect-[4/5]"
-            />
-          </div>
+        <div className="relative flex min-h-[420px] items-center justify-center lg:min-h-[520px]">
+          <div
+            aria-hidden="true"
+            className="absolute inset-8 rounded-full bg-white/70 blur-3xl"
+          />
 
-          <div className="absolute -bottom-6 -left-3 max-w-xs rounded-2xl border border-white/50 bg-primary-800 p-6 text-white shadow-xl sm:-left-6">
+          <img
+            src="/images/elderly-care-companion.png"
+            alt="Illustration of a caregiver sharing a warm moment with an older person"
+            className="relative z-10 w-full max-w-[470px] object-contain drop-shadow-2xl"
+          />
+
+          <div className="absolute -bottom-6 -left-3 z-20 max-w-xs rounded-2xl border border-white/50 bg-primary-800 p-6 text-white shadow-xl sm:-left-6">
             <p className="font-heading text-2xl font-bold">
               More than two decades of care
             </p>
@@ -104,7 +107,7 @@ function AboutSection() {
 
           <div
             aria-hidden="true"
-            className="absolute -right-5 -top-5 -z-10 h-32 w-32 rounded-full bg-accent-200/70"
+            className="absolute -right-5 -top-5 h-32 w-32 rounded-full bg-accent-200/70"
           />
         </div>
       </div>
