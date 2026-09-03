@@ -16,14 +16,18 @@ function SectionHeading({
   const isCentered = align === 'center'
   const isDark = theme === 'dark'
 
+  const wrapperClass = isCentered
+    ? 'mx-auto flex max-w-3xl flex-col items-center text-center'
+    : 'mx-auto flex max-w-3xl flex-col items-center text-center sm:mx-0 sm:items-start sm:text-left'
+
   return (
-    <div
-      className={`flex max-w-3xl flex-col items-center text-center sm:${
-        isCentered ? 'mx-auto items-center text-center' : 'items-start text-left'
-      }`}
-    >
+    <div className={wrapperClass}>
       {eyebrow && (
-        <div className="flex items-center justify-center gap-4 sm:justify-start">
+        <div
+          className={`flex items-center justify-center gap-4 ${
+            isCentered ? '' : 'sm:justify-start'
+          }`}
+        >
           {!isCentered && (
             <span
               className={`hidden h-px w-10 sm:block ${
@@ -33,9 +37,9 @@ function SectionHeading({
           )}
 
           <p
-            className={`text-xs font-bold uppercase tracking-[0.24em] ${
-              isDark ? 'text-accent-300' : 'text-primary-700'
-            }`}
+            className={`text-center text-xs font-bold uppercase tracking-[0.24em] ${
+              isCentered ? '' : 'sm:text-left'
+            } ${isDark ? 'text-accent-300' : 'text-primary-700'}`}
           >
             {eyebrow}
           </p>
@@ -43,8 +47,8 @@ function SectionHeading({
       )}
 
       <h2
-        className={`mt-5 w-full text-center font-heading text-5xl font-semibold leading-[0.98] tracking-[-0.025em] sm:text-left sm:text-6xl lg:text-7xl ${
-          isCentered ? 'sm:text-center' : ''
+        className={`mt-5 w-full text-center font-heading text-5xl font-semibold leading-[0.98] tracking-[-0.025em] sm:text-6xl lg:text-7xl ${
+          isCentered ? '' : 'sm:text-left'
         } ${isDark ? 'text-white' : 'text-primary-950'}`}
       >
         {title}
@@ -53,7 +57,7 @@ function SectionHeading({
       {description && (
         <p
           className={`mt-7 max-w-2xl text-center text-base leading-8 sm:text-lg ${
-            isCentered ? 'sm:text-center' : 'sm:text-left'
+            isCentered ? '' : 'sm:text-left'
           } ${isDark ? 'text-primary-100' : 'text-muted'}`}
         >
           {description}
