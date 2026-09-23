@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://kitsonet.org.za'
+export const SITE_URL = 'https://kitsonet.co.za'
 export const SITE_NAME = 'Kitso-Net'
 export const DEFAULT_SOCIAL_IMAGE = '/images/social-preview.png'
 
