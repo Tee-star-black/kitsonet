@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-const siteUrl = 'https://kitsonet.org.za'
+const siteUrl = 'https://kitsonet.co.za'
 const routes = {
   '/about': ['About Kitso-Net | Community Care in Johannesburg Since 2003', 'Meet Kitso-Net, a Johannesburg non-profit supporting older persons, families and caregivers through practical, community-rooted care since 2003.'],
   '/programmes': ['Older Persons Care Programmes in Johannesburg | Kitso-Net', 'Explore home-based care, active ageing, health outreach, counselling and psychosocial support for older persons and families in Johannesburg.'],
